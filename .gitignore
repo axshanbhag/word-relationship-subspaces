@@ -1,4 +1,3 @@
 .DS_Store
-glove_*.txt
 poster_controls_*/
 .env

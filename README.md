@@ -4,10 +4,10 @@ AICompS poster on whether word-relationship subspaces transfer to held-out pairs
 
 ## Run the experiment
 
-Use the original `glove_100k.txt` input from the study. Its precise release provenance is unverified. The embedding file is external to this repository. From this directory in MATLAB, run:
+Use the original `glove_100k.txt` input from the study. Its precise release provenance is unverified. The repository includes a lossless gzip copy. From the repository root, unpack it with `gzip -dk glove_100k.txt.gz`. Then, from this directory in MATLAB, run:
 
 ```matlab
-resultsFolder = run_poster_controls('original-experiment-settings.mat', '/path/to/glove_100k.txt', 'Original study embedding file');
+resultsFolder = run_poster_controls('original-experiment-settings.mat', 'glove_100k.txt', 'Original study embedding file');
 ```
 
 The original settings contain the word-pair lists and vocabulary cap. Check the new run's observed summaries and coverage against the archived CSVs before interpreting any differences.
